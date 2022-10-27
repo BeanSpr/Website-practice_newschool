@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* 全標籤取消外距、內距 */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-image: url(images/bg.jpg);
+}
+.box{
+    width: 1000px;
+    margin: 0 auto;
+    /* 清除對後方元素影響 */
+    clear: both;
+}
+.btn{
+    float: left; /* 由左至右並列 */
+}
+.col{
+    float: left;
+    width: 456px;
+    border: dotted 1px #000; /* 線型、線粗、顏色順序不影響運作 */
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
