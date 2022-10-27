@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基本表單</title>
+</head>
+
+<body>
+<form id="search_form" name="search_form" method="post">
+  <p>
+    <label for="search">搜尋:</label>
+    <input type="search" name="search" id="search">
+    <input type="submit" name="search_btn" id="search_btn" value="送出">
+  </p>
+</form>
+<form id="member_form" name="member_form" method="post">
+  <h2>會員資料修改</h2>
+  <p>「*」為必填欄位</p>
+  <p>
+    <label for="name">*帳號:</label>
+    <input name="account" type="text" disabled="disabled" required="required" id="account" style="width: 150px" value="BeanSpr_0313">
+  </p>
+  <p>
+    <label for="password">*密碼:</label>
+    <input name="password" type="password" required="required" id="password" title="請輸入密碼">
+  </p>
+  <p>
+    <label for="name">*姓名:</label>
+    <input name="name" type="text" required="required" id="name" placeholder="例如:王大明" title="請輸入姓名">
+  </p>
+  <p>
+    <label for="ID_number">*身分證字號:</label>
+    <input name="ID_number" type="text" required="required" id="ID_number" placeholder="例如:A123456789" title="請輸入身分證字號" maxlength="10">
+  </p>
+  <p>
+    <label for="tel">電話:</label>
+    <input name="tel" type="tel" id="tel" placeholder="例如:02-0202-0202" title="請輸入電話號碼" maxlength="10">
+  </p>
+  <p>
+    <label for="email">*Email:</label>
+    <input name="email" type="email" required="required" id="email" title="請輸入Email">
+  </p>
+  <p>
+    <label for="birthday">生日:</label>
+    <input name="birthday" type="date" id="birthday" title="請輸入生日">
+  </p>
+  <p>
+    <label for="gender">*性別:</label>
+    <select name="gender" required="required" id="gender" title="請選擇性別">
+      <option>-請選擇-</option>
+      <option value="男｜Male">男｜Male</option>
+      <option value="女｜Female">女｜Female</option>
+    </select>
+  </p>
+  <p>
+    <label for="textarea">留言區:</label>
+    <textarea name="textarea" cols="5" id="textarea" placeholder="有什麼想說給我聽..."></textarea>
+  </p>
+</form>
+</body>
+</html>
